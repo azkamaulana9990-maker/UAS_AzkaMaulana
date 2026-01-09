@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Reservasi | SmartFitHub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Gunakan CSS utama yang sama -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+    <h1 class="logo">SmartFitHub</h1>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="index.html#services">Program</a></li>
+            <li><a href="index.html#facility">Fasilitas</a></li>
+            <li><a href="index.html#contact">Kontak</a></li>
+            <li><a href="reservation.html">Reservasi</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- ================= RESERVATION SECTION ================= -->
+<section class="reservation">
+    <h2>Form Reservasi Kelas / Trial Membership</h2>
+    <p class="reservation-desc">
+        Silakan lengkapi formulir di bawah ini untuk melakukan reservasi kelas
+        atau mencoba trial membership di SmartFitHub.
+    </p>
+
+    <form class="reservation-form">
+        
+        <!-- Nama -->
+        <div class="form-group">
+            <label for="nama">Nama Lengkap *</label>
+            <input type="text" id="nama" name="nama" required>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <!-- Nomor HP -->
+        <div class="form-group">
+            <label for="hp">Nomor HP *</label>
+            <input type="tel" id="hp" name="hp" required>
+        </div>
+
+        <!-- Tanggal -->
+        <div class="form-group">
+            <label for="tanggal">Tanggal Reservasi *</label>
+            <input type="date" id="tanggal" name="tanggal" required>
+        </div>
+
+        <!-- Jam -->
+        <div class="form-group">
+            <label for="jam">Jam *</label>
+            <input type="time" id="jam" name="jam" required>
+        </div>
+
+        <!-- Jenis Program -->
+        <div class="form-group">
+            <label for="program">Jenis Program *</label>
+            <select id="program" name="program" required>
+                <option value="">-- Pilih Program --</option>
+                <option>Personal Trainer</option>
+                <option>Weight Training</option>
+                <option>Cardio Class</option>
+                <option>Trial Membership</option>
+            </select>
+        </div>
+
+        <!-- Cabang -->
+        <div class="form-group">
+            <label for="cabang">Pilih Cabang *</label>
+            <select id="cabang" name="cabang" required>
+                <option value="">-- Pilih Cabang --</option>
+                <option>Jakarta</option>
+                <option>Bandung</option>
+            </select>
+        </div>
+
+        <!-- Catatan -->
+        <div class="form-group">
+            <label for="catatan">Catatan Khusus</label>
+            <textarea id="catatan" name="catatan" rows="4"></textarea>
+        </div>
+
+        <!-- Checkbox -->
+        <div class="form-group checkbox-group">
+            <input type="checkbox" id="konfirmasi" required>
+            <label for="konfirmasi">
+                Saya memastikan data yang saya isi sudah benar *
+            </label>
+        </div>
+
+        <!-- Submit -->
+        <button type="submit" class="btn-primary">
+            Kirim Reservasi
+        </button>
+
+    </form>
+</section>
+<!-- ================= SUPPORT SECTION ================= -->
+<section class="support">
+    <div class="support-card">
+        <i>📞</i>
+        <h4>Telepon</h4>
+        <p>1500-123 (Customer Service)</p>
+        <p>08.00 – 20.00 WIB</p>
+    </div>
+
+    <div class="support-card">
+        <i>✉️</i>
+        <h4>Email</h4>
+        <p>reservasi@smartfithub.com</p>
+        <p>Respon dalam 24 jam</p>
+    </div>
+
+    <div class="support-card">
+        <i>💬</i>
+        <h4>Live Chat</h4>
+        <p>Website & Aplikasi SmartFitHub</p>
+        <p>24/7 untuk member</p>
+    </div>
+</section>
+<!-- ================= FAQ SECTION ================= -->
+<section class="faq">
+    <h2>Pertanyaan Umum (FAQ)</h2>
+
+    <div class="faq-item">
+        <input type="checkbox" id="faq1">
+        <label for="faq1" class="faq-title">
+            Apakah pemula boleh mengikuti kelas di SmartFitHub?
+        </label>
+        <div class="faq-content">
+            <p>
+                Ya, pemula sangat diperbolehkan. SmartFitHub menyediakan program
+                khusus untuk pemula dengan intensitas latihan yang disesuaikan
+                serta pendampingan dari trainer profesional.
+            </p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <input type="checkbox" id="faq2">
+        <label for="faq2" class="faq-title">
+            Apakah SmartFitHub menyediakan layanan personal trainer?
+        </label>
+        <div class="faq-content">
+            <p>
+                Tersedia. Personal trainer kami telah bersertifikat dan akan
+                membantu menyusun program latihan sesuai dengan kebutuhan,
+                tujuan, dan kondisi fisik member.
+            </p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <input type="checkbox" id="faq3">
+        <label for="faq3" class="faq-title">
+            Bagaimana sistem pembayaran membership dan kelas?
+        </label>
+        <div class="faq-content">
+            <p>
+                Pembayaran dapat dilakukan secara bulanan atau per program melalui
+                transfer bank, e-wallet, maupun pembayaran langsung di cabang
+                SmartFitHub.
+            </p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <input type="checkbox" id="faq4">
+        <label for="faq4" class="faq-title">
+            Apakah ada batasan usia untuk bergabung?
+        </label>
+        <div class="faq-content">
+            <p>
+                Usia minimal untuk bergabung adalah 16 tahun. Untuk calon member
+                di bawah usia 18 tahun, diperlukan persetujuan dari orang tua atau
+                wali.
+            </p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <input type="checkbox" id="faq5">
+        <label for="faq5" class="faq-title">
+            Apakah membership dapat dibekukan (freeze)?
+        </label>
+        <div class="faq-content">
+            <p>
+                Ya, membership dapat dibekukan maksimal selama 30 hari dengan
+                ketentuan tertentu. Pengajuan freeze dapat dilakukan melalui
+                admin cabang atau customer service.
+            </p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <input type="checkbox" id="faq6">
+        <label for="faq6" class="faq-title">
+            Apakah tersedia fasilitas trial membership?
+        </label>
+        <div class="faq-content">
+            <p>
+                Tersedia. SmartFitHub menyediakan trial membership bagi calon
+                member untuk mencoba fasilitas dan kelas sebelum mendaftar
+                sebagai member penuh.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <p>© 2026 SmartFitHub. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
